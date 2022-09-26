@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> </title>
+<script language="JavaScript">
+function WinOpen_kruszynski4()
+{
+window.open("obraz1.html","okienko","toolbar=no,directories=no,menubar=no,height=300,width=160,top=500,left=200")
+}
+function WinOpen_kruszynski5()
+{
+window.open("obraz2.html","okienko","toolbar=no,directories=no,menubar=no,height=300,width=160,top=500,left=400")
+}
+function WinOpen_kruszynski6()
+{
+window.open("obraz3.html","okienko","toolbar=no,directories=no,menubar=no,height=300,width=160,top=500,left=600")
+}
+function WinOpen_kruszynski7()
+{
+window.open("obraz4.html","okienko","toolbar=no,directories=no,menubar=no,height=300,width=160,top=500,left=700")
+}
+</script>
+</head>
+<body>
+<form>
+
+
+<p align="center"><input type="button" name="przycisk" value="obraz1" onclick="WinOpen_kruszynski4(' ')">
+<input type="button" name="przycisk" value="obraz2" onclick="WinOpen_kruszynski5(' ')">
+<input type="button" name="przycisk" value="obraz3" onclick="WinOpen_kruszynski6(' ')">
+<input type="button" name="przycisk" value="obraz4" onclick="WinOpen_kruszynski7(' ')">
+</form>
+</body>
+</html>
