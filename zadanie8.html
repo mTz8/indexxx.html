@@ -1,15 +1,33 @@
 <html>
-<body>
-<div style="color:red;font-size:50px;">
-<script language="JavaScript">
-    var liczba1=prompt("dzien 1=","");
-    var liczba2=prompt("dzien 2=","");
-    var ile_sekund_krus;
-    var d1_krus=parseFloat(liczba1);
-    var d2_krus=parseFloat(liczba2);
-    ile_sekund_krus=(d1_krus-d2_krus)*24*3600;
-document.write("ile_sekund="+d1_krus+" + "+d2_krus+" = "+ile_sekund+"<br>");
+<head>
+<script type="text/javascript">
+var dzien1=prompt("Dzień1=","");
+var dzien2=prompt("Dzień2=","");
+var ile_sekund_krus;
+var a=parseFloat(dzien1);
+var b=parseFloat(dzien2);
+if (a>b) {
+    wynik=(a*86400)-(b*86400);
+}
+if (a<b) {
+    wynik=(b*86400)-(a*86400);
+}
+if (a==b) {
+    wynik=0;
+}
+function okno_zamknij()
+{
+window.close()
+}
+document.write("Dzień1=  "+a+" <br>");
+document.write("Dzień2=  "+b+" <br>");
+document.write("Ilość sekund= " +wynik+"sekund <br>");
+
+
 </script>
-</div>
+</head>
+<body>
+ <p> <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> </p>
 </body>
-</html>
+
+</head>
