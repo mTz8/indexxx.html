@@ -1,0 +1,39 @@
+<html>
+<body>
+   <div style="color:red;font-size:50px;">
+   <script language="JavaScript">
+    var liczba1=prompt("c=","");
+    var liczba2=prompt("b=","");
+    var suma;
+    var c_kru=parseFloat(liczba1);
+    var b_kru=parseFloat(liczba2);
+    var a_kru=Math.sqrt(Math.pow(c_kru,2)-Math.pow(b_kru,2));
+    sin_alfa_kru=b_kru/c_kru;
+    alfa=Math.asin(b_kru/c_kru)*180/Math.PI;
+    beta=90-alfa;
+    cos_alfa_kru=a_kru/c_kru;
+    tg_alfa_kru=b_kru/a_kru;
+    ctg_alfa_kru=a_kru/b_kru;
+    obw=c_kru+b_jed+a_kru;
+    p=a_kru*b_kru/2;
+    h1=a_kru;
+    h2=b_kru;
+    h3=a_kru*b_kru/c_kru;
+document.write("c="+c_kru+"cm"+" <br>");
+document.write("b="+b_kru+"cm"+" <br>");
+document.write("a="+a_kru.toFixed(3)+"cm"+" <br>");
+document.write("sinalfa="+sin_alfa_kru.toFixed(3)+" <br>");
+document.write("cosalfa="+cos_alfa_kru.toFixed(3)+" <br>");
+document.write("tgalfa="+tg_alfa_kru.toFixed(3)+" <br>");
+document.write("ctgalfa="+ctg_alfa_kru.toFixed(3)+" <br>");
+document.write("alfa="+alfa.toFixed(3)+"st"+" <br>");
+document.write("beta="+beta.toFixed(3)+"st"+" <br>");
+document.write("Obwód="+obw.toFixed(3)+"cm"+" <br>");
+document.write("Pole="+p.toFixed(3)+"cm2"+" <br>");
+document.write("Wysokość 1="+h1.toFixed(3)+"cm"+" <br>");
+document.write("Wysokość 2="+h2.toFixed(3)+"cm"+" <br>");
+document.write("Wysokość 3="+h3.toFixed(3)+"cm"+" <br>");
+   </script>
+  </div>
+ </body>
+</html>
